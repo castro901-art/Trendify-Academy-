@@ -1,21 +1,39 @@
 # Trendify Academy
 
-A production-ready static prototype for Trendify Academy, built from the supplied landing-page concept.
+A production-ready Next.js prototype for Trendify Academy, a free AI education platform.
 
 ## Included
-- Responsive Trendify Academy marketing/landing page
-- 12-course catalog across 3 tracks
-- Search and track filtering
-- Course detail modal with lesson roadmap
-- Free student account prototype using browser localStorage
-- Enrollment flow and student dashboard
-- Progress UI
-- Certificate verification UI
-- Accessible keyboard interaction and reduced-motion support
-- Zero external runtime dependencies apart from Google Fonts
+
+- Responsive Trendify Academy landing page and course catalog
+- 12-course catalog across 3 learning tracks
+- Course search and track filtering
+- Course detail modal with enrollment flow
+- Client-side student account and enrollment prototype using browser local storage
+- Student dashboard with enrollment progress
+- Credential verification prototype
+- Keyboard-accessible interactions and reduced-motion support
+- No external runtime dependencies apart from Google Fonts
 
 ## Important
-The account, enrollment, and certificate data are currently client-side prototype functionality. For production, connect these flows to a real database/auth provider and certificate issuance service.
 
-## Deploy
-This is a static site. It can be deployed directly to Vercel with no build step. The entry point is `index.html`.
+Account, enrollment, and certificate data are currently client-side prototype functionality. For production, connect these flows to a real authentication provider, database, and certificate issuance service.
+
+## Local development
+
+Install dependencies and start the Next.js development server:
+
+```bash
+npm install
+npm run dev
+```
+
+Open `http://localhost:3000` in your browser.
+
+## Production build
+
+```bash
+npm run build
+npm run start
+```
+
+The application can be deployed to Vercel or another host that supports Next.js. The app entry point is `app/page.js`; `index.html` is not the deployment entry point for this project.
